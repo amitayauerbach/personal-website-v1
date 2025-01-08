@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal website showcasing my projects and portfolio.">
-    <title>Personal Website</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal website">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#introduction"><img src="icons/home.png" alt="Home Icon"> Introduction</a></li>
+        <li><a href="#about-me"><img src="icons/about.png" alt="About Me Icon"> About Me</a></li>
+        <li><a href="#projects"><img src="icons/projects.png" alt="Projects Icon"> Projects</a></li>
+        <li><a href="#contact"><img src="icons/contact.png" alt="Contact Icon"> Contact Me</a></li>
+        <li><a href="#cv"><img src="icons/cv.png" alt="CV Icon"> CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a short introduction about myself.</p>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Bla Bla Bla about me Bla Bla Bla</p>
+    </section>
+
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>Learn more about my background, skills, and experience.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on.</p>
+      <h2>Projects</h2>
+      <p>Here are some of the projects I have worked on.</p>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with me through email or social media.</p>
+      <h2>Contact Me</h2>
+      <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Your Name</p>
-    </footer>
+    <section id="cv">
+      <h2>My CV</h2>
+      <a href="path/to/your/cv.pdf" target="_blank">Download my CV</a>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
